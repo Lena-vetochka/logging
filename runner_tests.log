@@ -1,0 +1,16 @@
+2024-12-08 01:48:41,639 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "D:\!Python 2024\pyColorRing\tests_12_4.py", line 21, in test_run
+    runner2 = rn.Runner(4, 5)
+              ^^^^^^^^^^^^^^^
+  File "D:\!Python 2024\pyColorRing\rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-12-08 01:48:41,640 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "D:\!Python 2024\pyColorRing\tests_12_4.py", line 10, in test_walk
+    runner1 = rn.Runner('Mari', -5)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\!Python 2024\pyColorRing\rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
